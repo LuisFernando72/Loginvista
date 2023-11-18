@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/estilo_index.css" />
+    <script src="lib/jQuery3.js" type="text/javascript"></script>
+    <script src="lib/sweetalert2.min.js" type="text/javascript"></script>
+    <script src="lib/all.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="registrarse">
+          <form
+            action="IniciarSesion"
+            method="POST"
+            id="frm_login"
+            class="sign-in-form"
+          >
+            <div class="contenedorLogo">
+              <img class="animacion-image" src="img/Empresalogo.png" />
+              <div class="logoEmpresa">
+                <div>
+                  <span>EL SAESPOS</span>
+                  <p>&#9733; Que va llevar joven? &#9733;</p>
+                </div>
+              </div>
+            </div>
+            <!-- correo -->
+            <div class="input-field">
+              <div class="input-text">
+                <i>
+                  <ion-icon name="person-outline"></ion-icon>
+                </i>
+                <input
+                  type="text"
+                  id="txtCorreoUsuario"
+                  name="txtCorreoUsuario"
+                  placeholder="Correo electrónico"
+                />
+              </div>
+              <span style="font-size: 14px">@gmail.com</span>
+            </div>
+            <!-- Contraseña -->
+            <div class="input-field">
+              <div class="input-text">
+                <i>
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                </i>
+                <input
+                  type="password"
+                  id="txtPassword"
+                  name="txtPassword"
+                  autocomplete="on"
+                  placeholder="Contraseña"
+                />
+              </div>
+              <span class="hide" id="eye-hide">
+                <i class="fa solid fa-eye-slash"></i>
+              </span>
+              <span class="show" id="eye-show"
+                ><i class="fa light fa-eye ico"></i>
+              </span>
+            </div>
+            <button type="submit" id="accion" class="btn">Ingresar</button>
+
+          
+          </form>
+        </div>
+      </div>
+      <!-- PANEL LADO IZQUIERDO   -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>BIENVENIDO</h3>
+            <p id="txt_frase" style="font-style: italic;"></p>
+          </div>
+          <img src="img/log2.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main_index.js"></script>
+  </body>
+</html>
